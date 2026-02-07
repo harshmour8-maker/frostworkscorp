@@ -4,171 +4,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>On The Rocks — Premium Ice Cubes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Google Font similar to bold geometric logo style -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f4f6f8;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #f6f6f6;
       color: #111;
-      text-align: center;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .logo img {
+      height: 60px;
     }
 
     .hero {
-      padding: 80px 20px;
-      background: linear-gradient(180deg, #ffffff, #eef3f7);
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 8%;
+      background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+      text-align: center;
     }
 
-    .logo {
-      width: 220px;
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero-logo {
+      width: 320px;
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      font-weight: 600;
+      letter-spacing: 6px;
       margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 52px;
-      margin: 10px 0;
-      letter-spacing: 3px;
-    }
-
-    h2 {
-      font-weight: 400;
-      color: #555;
     }
 
     .tagline {
       font-size: 20px;
-      margin: 20px 0 30px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 25px;
-    }
-
-    .btn {
-      text-decoration: none;
-      background: black;
-      color: white;
-      padding: 14px 22px;
-      border-radius: 12px;
-      font-weight: 600;
-      transition: 0.2s;
-    }
-
-    .btn.whatsapp {
-      background: #25D366;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
+      color: #555;
+      font-weight: 300;
     }
 
     .section {
-      padding: 70px 20px;
+      padding: 80px 8%;
+      background: white;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: 600;
     }
 
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
+      gap: 30px;
+      margin-top: 40px;
     }
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 18px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    .feature-card {
+      background: #fafafa;
+      padding: 30px;
+      border-radius: 14px;
+      border: 1px solid #eee;
+      transition: 0.3s;
     }
 
-    .product-img {
-      width: 280px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      margin-top: 20px;
-    }
-
-    iframe {
-      border-radius: 16px;
-      margin-top: 25px;
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
     footer {
+      padding: 40px 8%;
+      text-align: center;
       background: #111;
       color: white;
-      padding: 30px;
-      font-size: 14px;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <div class="hero">
-    <img src="logo.png" class="logo" alt="On The Rocks Logo">
-    <h1>ON THE ROCKS</h1>
-    <h2>Premium Ice Cubes</h2>
-    <p class="tagline">Chilling perfection in every cube</p>
-
-    <div class="buttons">
-      <a class="btn" href="https://blinkit.com/prn/x/prid/603558">Order on Blinkit</a>
-      <a class="btn" href="https://dl.flipkart.com/s/SpHEYAuuuN">Buy on Flipkart</a>
-      <a class="btn" href="https://www.instagram.com/ontherocks.in">Instagram</a>
-      <a class="btn whatsapp" href="https://wa.me/916003368214">WhatsApp Order</a>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="On The Rocks Logo" />
     </div>
-  </div>
+  </header>
 
-  <!-- PRODUCT SECTION -->
-  <div class="section">
-    <h2>Our Product</h2>
-    <p>Premium packaged ice cubes made from purified water using hygienic processes.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <img src="logo.png" class="hero-logo" alt="On The Rocks Premium Ice Cubes" />
+      <h2>PREMIUM ICE CUBES</h2>
+      <p class="tagline">Chilling perfection in every cube.</p>
+    </div>
+  </section>
 
-    <!-- Replace product.jpg with your product photo -->
-    <img src="product.jpg" class="product-img" alt="Ice Cubes Pack">
-  </div>
-
-  <!-- FEATURES -->
-  <div class="section">
-    <h2>Why Choose On The Rocks?</h2>
+  <section class="section">
+    <h3>Why Choose Us</h3>
 
     <div class="features">
-      <div class="card">
-        <h3>Crystal Clear</h3>
-        <p>Perfectly frozen cubes designed for premium beverages.</p>
+      <div class="feature-card">
+        <h4>Crystal Clear Ice</h4>
+        <p>Purified water processed with hygienic manufacturing standards.</p>
       </div>
 
-      <div class="card">
-        <h3>Food‑Safe & Hygienic</h3>
-        <p>Produced with purified water and sealed packaging.</p>
+      <div class="feature-card">
+        <h4>Premium Packaging</h4>
+        <p>Sealed and safe packaging designed for freshness and convenience.</p>
       </div>
 
-      <div class="card">
-        <h3>Fast Delivery</h3>
-        <p>Available instantly via Blinkit and online stores.</p>
+      <div class="feature-card">
+        <h4>Perfect for Every Occasion</h4>
+        <p>Home, parties, restaurants, and events.</p>
       </div>
     </div>
-  </div>
-
-  <!-- LOCATION -->
-  <div class="section">
-    <h2>Find Us</h2>
-
-    <iframe
-      src="https://maps.google.com/maps?q=guwahati&t=&z=13&ie=UTF8&iwloc=&output=embed"
-      width="90%"
-      height="300"
-      loading="lazy">
-    </iframe>
-  </div>
+  </section>
 
   <footer>
-    Frostworks Corporation • Contact: +91 6003-368214
+    Frostworks Corporation • Guwahati, Assam
   </footer>
 
 </body>
