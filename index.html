@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>On The Rocks — Premium Ice Cubes</title>
 
-  <!-- Google Font (clean geometric font similar to logo style) -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Premium geometric font similar to logo -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -23,13 +23,13 @@
       line-height: 1.6;
     }
 
-    /* Navigation */
+    /* NAVIGATION */
     nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(0,0,0,0.9);
-      backdrop-filter: blur(8px);
+      background: rgba(0,0,0,0.92);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid #222;
       z-index: 1000;
     }
@@ -40,18 +40,23 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 24px;
+      padding: 14px 24px;
     }
 
     .logo {
-      height: 40px;
+      height: 64px; /* increased logo size */
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
     }
 
     .nav-links a {
       color: #fff;
       text-decoration: none;
-      margin-left: 24px;
-      font-size: 14px;
+      font-size: 13px;
       letter-spacing: 1px;
       transition: 0.3s;
     }
@@ -60,9 +65,28 @@
       opacity: 0.6;
     }
 
-    /* Hero */
+    /* ORDER ICONS */
+    .order-icons {
+      display: flex;
+      gap: 14px;
+      margin-left: 10px;
+    }
+
+    .order-icons img {
+      height: 28px;
+      background: #fff;
+      padding: 4px;
+      border-radius: 6px;
+      transition: transform .25s ease;
+    }
+
+    .order-icons img:hover {
+      transform: scale(1.15);
+    }
+
+    /* HERO */
     .hero {
-      padding-top: 120px;
+      padding-top: 140px;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -71,31 +95,37 @@
       text-align: center;
       padding-left: 20px;
       padding-right: 20px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .hero h1 {
-      font-size: 48px;
-      font-weight: 700;
+      font-size: 52px;
+      font-weight: 800;
       margin-bottom: 16px;
     }
 
     .hero p {
-      max-width: 700px;
+      max-width: 720px;
       opacity: 0.8;
       margin-bottom: 40px;
     }
 
     .hero-gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
       width: 100%;
       max-width: 1000px;
     }
 
     .hero-gallery img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 14px;
       transition: transform 0.4s ease, opacity 0.4s ease;
     }
 
@@ -104,24 +134,26 @@
       opacity: 0.9;
     }
 
-    /* Sections */
+    /* SECTIONS */
     section {
       padding: 100px 20px;
       max-width: 1100px;
       margin: auto;
+      animation: fadeIn 1s ease;
     }
 
     h2 {
       margin-bottom: 20px;
-      font-size: 32px;
+      font-size: 34px;
     }
 
     .about-text {
       opacity: 0.85;
       max-width: 800px;
+      font-size: 16px;
     }
 
-    /* Reviews */
+    /* REVIEWS */
     .reviews {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -131,7 +163,7 @@
     .review-card {
       border: 1px solid #222;
       border-radius: 16px;
-      padding: 20px;
+      padding: 22px;
       transition: transform 0.3s ease, background 0.3s ease;
     }
 
@@ -140,7 +172,7 @@
       background: #111;
     }
 
-    /* Founders */
+    /* FOUNDERS */
     .founders {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -153,6 +185,32 @@
       margin-bottom: 16px;
     }
 
+    /* ENQUIRY FORM */
+    .form-box {
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      background: #000;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 12px;
+      background: #fff;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -160,15 +218,11 @@
       opacity: 0.7;
     }
 
-    /* Mobile */
+    /* MOBILE */
     @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      .nav-links {
-        display: none;
-      }
+      .hero h1 { font-size: 36px; }
+      .logo { height: 54px; }
+      .nav-links a { display: none; }
     }
   </style>
 </head>
@@ -179,11 +233,24 @@
   <nav>
     <div class="nav-container">
       <img src="logo.png" class="logo" />
+
       <div class="nav-links">
         <a href="#about">ABOUT</a>
         <a href="#reviews">REVIEWS</a>
         <a href="#founders">FOUNDERS</a>
         <a href="#contact">CONTACT</a>
+
+        <div class="order-icons">
+          <a href="https://blinkit.com/prn/x/prid/603558" target="_blank">
+            <img src="blinkit.png" />
+          </a>
+          <a href="https://dl.flipkart.com/s/SpHEYAuuuN" target="_blank">
+            <img src="flipkart.png" />
+          </a>
+          <a href="https://wa.me/c/916003368214" target="_blank">
+            <img src="whatsapp.png" />
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -191,11 +258,15 @@
   <!-- HERO -->
   <div class="hero">
     <h1>Chilling perfection in every cube</h1>
-    <p>Premium packaged ice designed for purity, consistency, and convenience. Currently serving Guwahati and Siliguri via Blinkit.</p>
+    <p>
+      On The Rocks delivers premium, crystal‑clear packaged ice cubes manufactured
+      using purified water, hygienic processing, and temperature‑controlled storage.
+      Built for homes, parties, cafés, and bars that demand consistency and quality.
+    </p>
 
     <div class="hero-gallery">
       <img src="product.jpg" />
-      <img src="drink.jpeg" />
+      <img src="IMG_4424.jpeg" />
     </div>
   </div>
 
@@ -203,11 +274,19 @@
   <section id="about">
     <h2>About On The Rocks</h2>
     <p class="about-text">
-      On The Rocks is built to redefine how packaged ice is produced, stored, and delivered. Our focus is simple — deliver crystal‑clear, food‑safe premium ice cubes with consistent quality every single time.
+      On The Rocks was created to bring reliability, hygiene, and premium quality
+      to an everyday product that is often overlooked — ice. By combining structured
+      production systems with FMCG‑style operational discipline, the brand ensures
+      consistency across manufacturing, storage, and delivery.
       <br><br>
-      Designed for homes, parties, cafes, and bars, our production process follows strict hygiene and filtration standards to ensure purity in every cube. From manufacturing to last‑mile delivery, we prioritize reliability, temperature integrity, and operational efficiency.
+      Every cube is produced using multi‑stage purified water and handled in
+      temperature‑controlled environments to maintain clarity, density, and safety.
+      The result is slow‑melting, crystal‑clear ice designed for both home
+      consumption and commercial use.
       <br><br>
-      We are currently operating in Guwahati and Siliguri and expanding steadily through quick‑commerce platforms.
+      The company is currently serving customers in Guwahati and Siliguri through
+      direct distribution and quick‑commerce partnerships while steadily expanding
+      its production and logistics network.
     </p>
   </section>
 
@@ -215,47 +294,54 @@
   <section id="reviews">
     <h2>Customer Reviews</h2>
     <div class="reviews">
-      <div class="review-card">★★★★★<br><br>"Perfect cubes for parties. Super convenient!"</div>
-      <div class="review-card">★★★★★<br><br>"Clean, clear, and long‑lasting ice."</div>
-      <div class="review-card">★★★★★<br><br>"Delivery was quick and packaging was premium."</div>
+      <div class="review-card">★★★★★<br><br>"Perfect cubes for parties."</div>
+      <div class="review-card">★★★★★<br><br>"Very clean and premium packaging."</div>
+      <div class="review-card">★★★★★<br><br>"Reliable delivery every time."</div>
     </div>
   </section>
 
   <!-- FOUNDERS -->
   <section id="founders">
     <h2>Co‑Founders</h2>
-
     <div class="founders">
 
       <div class="founder-card">
         <img src="harsh.jpg" />
         <h3>Harsh Mour</h3>
-        <p><strong>Co‑Founder | Production & Growth</strong></p>
         <p>
-          Harsh leads manufacturing strategy, process optimization, and business expansion at On The Rocks.
-          With 5 years of FMCG experience, he specializes in building scalable production systems,
-          improving operational efficiency, and ensuring consistent product quality.
-          His execution‑first mindset ensures reliability across every batch produced.
+          Harsh Mour leads production strategy and growth execution at On The Rocks.
+          With FMCG manufacturing experience, he focuses on scaling production systems,
+          improving process efficiency, and maintaining consistent product quality
+          across operations.
         </p>
       </div>
 
       <div class="founder-card">
         <img src="gaurav.jpg" />
         <h3>Gaurav Goyal</h3>
-        <p><strong>Co‑Founder | Operations & Finance</strong></p>
         <p>
-          A Chartered Accountant by profession, Gaurav oversees operations, compliance,
-          and financial governance at On The Rocks. His background in audits and process
-          control ensures disciplined execution, strong financial systems, and sustainable growth.
+          Gaurav Goyal oversees operations, compliance, and financial governance.
+          As a Chartered Accountant with internal audit experience, he builds
+          structured operational systems that support disciplined and scalable growth.
         </p>
       </div>
 
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ENQUIRY -->
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Enquire Here</h2>
+
+    <form class="form-box" action="https://formsubmit.co/info@frostworkscorp.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Contact Number" required>
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send Enquiry</button>
+    </form>
+
+    <br>
     <p>Email: info@frostworkscorp.com</p>
     <p>Phone: +91 60033 68214</p>
   </section>
