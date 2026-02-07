@@ -1,153 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>On The Rocks — Premium Ice Cubes</title>
-  
-  <!-- Google Font similar to bold geometric logo style -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>On The Rocks — Premium Ice Cubes</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    body {
-      background: #f6f6f6;
-      color: #111;
-      line-height: 1.6;
-    }
+<style>
+body{
+font-family:Inter, sans-serif;
+margin:0;
+background:#0b0f14;
+color:white;
+}
 
-    header {
-      padding: 24px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: white;
-      border-bottom: 1px solid #eaeaea;
-    }
+nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:18px 10%;
+background:#0b0f14;
+position:sticky;
+top:0;
+}
 
-    .logo img {
-      height: 60px;
-    }
+nav img{
+height:40px;
+}
 
-    .hero {
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 8%;
-      background: linear-gradient(to bottom, #ffffff, #f2f2f2);
-      text-align: center;
-    }
+section{
+padding:80px 10%;
+}
 
-    .hero-content {
-      max-width: 700px;
-    }
+.hero{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),url('product.jpg');
+background-size:cover;
+background-position:center;
+text-align:center;
+}
 
-    .hero-logo {
-      width: 320px;
-      margin-bottom: 30px;
-    }
+.hero-logo{
+height:70px;
+margin-bottom:20px;
+}
 
-    .hero h2 {
-      font-weight: 600;
-      letter-spacing: 6px;
-      margin-bottom: 20px;
-    }
+h1{
+font-size:48px;
+margin-bottom:10px;
+}
 
-    .tagline {
-      font-size: 20px;
-      color: #555;
-      font-weight: 300;
-    }
+.tagline{
+opacity:.8;
+margin-bottom:20px;
+}
 
-    .section {
-      padding: 80px 8%;
-      background: white;
-      text-align: center;
-    }
+.button{
+display:inline-block;
+margin:10px;
+padding:14px 26px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+}
 
-    .section h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
+.card{
+background:#111827;
+padding:25px;
+border-radius:14px;
+}
 
-    .feature-card {
-      background: #fafafa;
-      padding: 30px;
-      border-radius: 14px;
-      border: 1px solid #eee;
-      transition: 0.3s;
-    }
+.founder img{
+width:100%;
+border-radius:12px;
+}
 
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    }
+.gallery img{
+width:100%;
+border-radius:12px;
+}
 
-    footer {
-      padding: 40px 8%;
-      text-align: center;
-      background: #111;
-      color: white;
-      letter-spacing: 1px;
-    }
-  </style>
+iframe{
+width:100%;
+height:350px;
+border:0;
+border-radius:12px;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="On The Rocks Logo" />
-    </div>
-  </header>
+<!-- NAVBAR -->
+<nav>
+<img src="logo.png" alt="On The Rocks logo">
+<div>Premium Ice Cubes</div>
+</nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <img src="logo.png" class="hero-logo" alt="On The Rocks Premium Ice Cubes" />
-      <h2>PREMIUM ICE CUBES</h2>
-      <p class="tagline">Chilling perfection in every cube.</p>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+<img src="logo.png" class="hero-logo">
+<h1>On The Rocks</h1>
+<div class="tagline">Chilling Perfection in Every Cube</div>
+<p>⭐ Trusted by customers across Guwahati & Siliguri</p>
 
-  <section class="section">
-    <h3>Why Choose Us</h3>
+<a class="button" href="https://blinkit.com/prn/x/prid/603558">Order on Blinkit</a>
+<a class="button" href="https://dl.flipkart.com/s/SpHEYAuuuN">Order on Flipkart</a>
+<a class="button" href="https://wa.me/c/916003368214">WhatsApp Order</a>
+</section>
 
-    <div class="features">
-      <div class="feature-card">
-        <h4>Crystal Clear Ice</h4>
-        <p>Purified water processed with hygienic manufacturing standards.</p>
-      </div>
+<section>
+<h2>About Us</h2>
+<p>
+On The Rocks delivers premium packaged ice cubes made from purified water
+using hygienic production processes and food-grade packaging.
+Built for homes, parties, cafés, and bars.
+</p>
+</section>
 
-      <div class="feature-card">
-        <h4>Premium Packaging</h4>
-        <p>Sealed and safe packaging designed for freshness and convenience.</p>
-      </div>
+<section>
+<h2>Products</h2>
+<div class="grid">
+<div class="card">1kg Packaged Ice Cubes</div>
+<div class="card">Bulk Supply for Restaurants & Bars</div>
+<div class="card">Quick-Commerce Delivery</div>
+</div>
+</section>
 
-      <div class="feature-card">
-        <h4>Perfect for Every Occasion</h4>
-        <p>Home, parties, restaurants, and events.</p>
-      </div>
-    </div>
-  </section>
+<section class="gallery">
+<h2>Gallery</h2>
+<div class="grid">
+<img src="product.jpg">
+<img src="drink.jpg">
+</div>
+</section>
 
-  <footer>
-    Frostworks Corporation • Guwahati, Assam
-  </footer>
+<section>
+<h2>Watch On The Rocks</h2>
+<video width="100%" controls>
+<source src="promo.mp4" type="video/mp4">
+</video>
+</section>
+
+<section>
+<h2>Co-Founders</h2>
+<div class="grid">
+
+<div class="card founder">
+<img src="harsh.jpg">
+<h3>Harsh Mour</h3>
+<p>Co-Founder</p>
+<p>Leading production and growth strategy with FMCG experience.</p>
+</div>
+
+<div class="card founder">
+<img src="gaurav.jpg">
+<h3>Gaurav Goyal</h3>
+<p>Co-Founder</p>
+<p>Chartered Accountant overseeing operations and compliance.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Find Us</h2>
+<iframe src="https://maps.google.com/maps?q=On%20The%20Rocks%20Premium%20Ice%20Cubes&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<section>
+<h2>Enquire</h2>
+<p>Phone: 6003368214</p>
+<p>Email: info@frostworkscorp.com</p>
+</section>
 
 </body>
 </html>
-
