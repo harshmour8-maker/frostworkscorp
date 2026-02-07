@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On The Rocks — Premium Ice Cubes</title>
+  
+  <!-- Google Font similar to bold geometric logo style -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #f6f6f6;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 8%;
+      background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero-logo {
+      width: 320px;
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      font-weight: 600;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+    }
+
+    .tagline {
+      font-size: 20px;
+      color: #555;
+      font-weight: 300;
+    }
+
+    .section {
+      padding: 80px 8%;
+      background: white;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background: #fafafa;
+      padding: 30px;
+      border-radius: 14px;
+      border: 1px solid #eee;
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      padding: 40px 8%;
+      text-align: center;
+      background: #111;
+      color: white;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="On The Rocks Logo" />
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="logo.png" class="hero-logo" alt="On The Rocks Premium Ice Cubes" />
+      <h2>PREMIUM ICE CUBES</h2>
+      <p class="tagline">Chilling perfection in every cube.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Why Choose Us</h3>
+
+    <div class="features">
+      <div class="feature-card">
+        <h4>Crystal Clear Ice</h4>
+        <p>Purified water processed with hygienic manufacturing standards.</p>
+      </div>
+
+      <div class="feature-card">
+        <h4>Premium Packaging</h4>
+        <p>Sealed and safe packaging designed for freshness and convenience.</p>
+      </div>
+
+      <div class="feature-card">
+        <h4>Perfect for Every Occasion</h4>
+        <p>Home, parties, restaurants, and events.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Frostworks Corporation • Guwahati, Assam
+  </footer>
+
+</body>
+</html>
