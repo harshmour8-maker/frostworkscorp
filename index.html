@@ -1,59 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>On The Rocks | Premium Ice Cubes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="On The Rocks – Premium Ice Cubes. Chilling perfection in every cube.">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On The Rocks — Premium Ice Cubes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f8;
+      color: #111;
+      text-align: center;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #ffffff, #eef3f7);
+    }
+
+    .logo {
+      width: 220px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin: 10px 0;
+      letter-spacing: 3px;
+    }
+
+    h2 {
+      font-weight: 400;
+      color: #555;
+    }
+
+    .tagline {
+      font-size: 20px;
+      margin: 20px 0 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .btn {
+      text-decoration: none;
+      background: black;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn.whatsapp {
+      background: #25D366;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .section {
+      padding: 70px 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    .product-img {
+      width: 280px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-top: 20px;
+    }
+
+    iframe {
+      border-radius: 16px;
+      margin-top: 25px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 30px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-<header class="hero">
-  <img src="logo.png" alt="On The Rocks Logo" class="logo">
-  <h1>Premium Ice Cubes</h1>
-  <p>Chilling perfection in every cube</p>
-  <a href="https://wa.me/916003368214" class="btn">Order on WhatsApp</a>
-</header>
+  <!-- HERO -->
+  <div class="hero">
+    <img src="logo.png" class="logo" alt="On The Rocks Logo">
+    <h1>ON THE ROCKS</h1>
+    <h2>Premium Ice Cubes</h2>
+    <p class="tagline">Chilling perfection in every cube</p>
 
-<section class="about">
-  <h2>About Us</h2>
-  <p>
-    <strong>On The Rocks</strong> is a premium ice cube brand focused on purity,
-    consistency, and crystal-clear quality. Made using 100% purified water,
-    our ice cubes are designed for beverages that deserve nothing but the best.
-  </p>
-</section>
+    <div class="buttons">
+      <a class="btn" href="https://blinkit.com/prn/x/prid/603558">Order on Blinkit</a>
+      <a class="btn" href="https://dl.flipkart.com/s/SpHEYAuuuN">Buy on Flipkart</a>
+      <a class="btn" href="https://www.instagram.com/ontherocks.in">Instagram</a>
+      <a class="btn whatsapp" href="https://wa.me/916003368214">WhatsApp Order</a>
+    </div>
+  </div>
 
-<section class="product">
-  <h2>Our Product</h2>
-  <img src="product.jpg" alt="On The Rocks Ice Cubes">
-  <p>
-    Hygienically packed premium ice cubes suitable for homes, parties,
-    bars, restaurants, events, and bulk commercial use.
-  </p>
-</section>
+  <!-- PRODUCT SECTION -->
+  <div class="section">
+    <h2>Our Product</h2>
+    <p>Premium packaged ice cubes made from purified water using hygienic processes.</p>
 
-<section class="why">
-  <h2>Why On The Rocks?</h2>
-  <ul>
-    <li>🧊 100% Purified Water</li>
-    <li>❄ Crystal Clear Ice</li>
-    <li>🛡 Hygienic Packaging</li>
-    <li>🚚 Reliable Local Supply</li>
-  </ul>
-</section>
+    <!-- Replace product.jpg with your product photo -->
+    <img src="product.jpg" class="product-img" alt="Ice Cubes Pack">
+  </div>
 
-<section class="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Phone / WhatsApp:</strong> +91 60033 68214</p>
-  <p><strong>Email:</strong> frostworkscorp@gmail.com</p>
-  <p><strong>Instagram:</strong> @ontherocks.india</p>
-</section>
+  <!-- FEATURES -->
+  <div class="section">
+    <h2>Why Choose On The Rocks?</h2>
 
-<footer>
-  <p>© 2026 On The Rocks – Premium Ice Cubes</p>
-</footer>
+    <div class="features">
+      <div class="card">
+        <h3>Crystal Clear</h3>
+        <p>Perfectly frozen cubes designed for premium beverages.</p>
+      </div>
+
+      <div class="card">
+        <h3>Food‑Safe & Hygienic</h3>
+        <p>Produced with purified water and sealed packaging.</p>
+      </div>
+
+      <div class="card">
+        <h3>Fast Delivery</h3>
+        <p>Available instantly via Blinkit and online stores.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOCATION -->
+  <div class="section">
+    <h2>Find Us</h2>
+
+    <iframe
+      src="https://maps.google.com/maps?q=guwahati&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      width="90%"
+      height="300"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <footer>
+    Frostworks Corporation • Contact: +91 6003-368214
+  </footer>
 
 </body>
 </html>
+
